@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box; }
 
-.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title {
+.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title, .app main .post .post_title {
   font-family: "DM Serif Display", sans-serif;
   font-size: 4.8rem;
   font-weight: 400;
@@ -29,7 +29,7 @@
   letter-spacing: 1.68px;
   color: #000; }
 
-.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn {
+.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn, .app main .post .post_btn {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
@@ -37,7 +37,7 @@
   letter-spacing: 1.92px;
   color: #000; }
 
-.app header .content .content_body .details, .app main .price .price_planGroup .item .item_price, .app main .price .price_details, .app main .work .work_steps .step .step_body .detail {
+.app header .content .content_body .details, .app main .price .price_planGroup .item .item_price, .app main .price .price_details, .app main .work .work_steps .step .step_body .detail, .app main .post .post_group .item .item_content {
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -45,7 +45,7 @@
   letter-spacing: 0.18px;
   color: #000; }
 
-.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn {
+.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn, .app main .post .post_btn {
   min-height: 61px;
   min-width: 183px;
   border: 4px solid #ef8094;
@@ -273,6 +273,46 @@
       background: #fff;
       min-width: 284px;
       margin-top: 152px; }
+  .app main .post {
+    position: relative;
+    width: 100%;
+    background: #f5f8ff;
+    margin-top: 136px;
+    padding: 100px 2.92% 94px 3.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .app main .post .post_group {
+      position: relative;
+      width: 1350px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 34px;
+      margin-top: 60px;
+      z-index: 2; }
+      .app main .post .post_group .item {
+        display: flex;
+        flex-direction: column; }
+        .app main .post .post_group .item .item_content {
+          margin-top: 32px;
+          font-size: 2.6rem;
+          letter-spacing: 0.26px; }
+    .app main .post .post_btn {
+      min-width: 320px;
+      color: #fff;
+      margin-top: 108px; }
+  .app main .post:before {
+    content: url(../images/main/bg-post-1.png);
+    position: absolute;
+    top: 252px;
+    left: 25%;
+    z-index: 1; }
+  .app main .post:after {
+    content: url(../images/main/bg-post-2.png);
+    position: absolute;
+    top: 664px;
+    left: 62.5%;
+    z-index: 3; }
 
 @media screen and (max-width: 1200px) {
   .app header .navBar {
@@ -400,7 +440,23 @@
       min-height: 48px;
       margin-top: 126px;
       font-size: 1.2rem;
-      letter-spacing: 1.44px; } }
+      letter-spacing: 1.44px; }
+  .app main .post {
+    margin-top: 86px;
+    padding: 100px 7.1% 130px 7.1%; }
+    .app main .post .post_group {
+      width: 658px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 48px; }
+      .app main .post .post_group .item .item_content {
+        font-size: 2rem;
+        letter-spacing: 0.2px; }
+    .app main .post .post_btn {
+      margin-top: 72px; }
+  .app main .post:before {
+    display: none; }
+  .app main .post:after {
+    display: none; } }
 @media screen and (max-width: 768px) {
   .app header .navBar {
     position: relative;
@@ -553,6 +609,21 @@
       min-height: 61px;
       margin-top: 60px;
       font-size: 1.6rem;
-      letter-spacing: 1.92px; } }
+      letter-spacing: 1.92px; }
+  .app main .post {
+    margin-top: 138px;
+    padding: 56px 8.5% 130px 8.5%; }
+    .app main .post .post_group {
+      width: 312px;
+      grid-template-columns: 1fr;
+      margin-top: 24px;
+      row-gap: 64px; }
+      .app main .post .post_group .item .item_content {
+        margin-top: 32px;
+        font-size: 2.2rem;
+        letter-spacing: 0.22px; }
+    .app main .post .post_btn {
+      min-width: 312px;
+      margin-top: 104px; } }
 
 /*# sourceMappingURL=home.css.map */
