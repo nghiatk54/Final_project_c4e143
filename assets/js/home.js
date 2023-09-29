@@ -1,3 +1,4 @@
+let width = screen.width;
 const navBarIcon = document.querySelector(".navBar .navBar_icon");
 const navBarClose = document.querySelector(".navBar .navBar_close");
 const navBarGroup = document.querySelector(".navBar .navBar_group");

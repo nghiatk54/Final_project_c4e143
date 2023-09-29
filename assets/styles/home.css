@@ -5,6 +5,22 @@
 * {
   box-sizing: border-box; }
 
+.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 116.6%;
+  color: #000; }
+
+.app main .price .price_planGroup .item .item_time, .app main .work .work_steps .step .step_body .title {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.2%;
+  color: #000; }
+
 .app header .navBar .navBar_group .item a {
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
@@ -12,6 +28,29 @@
   font-weight: 500;
   letter-spacing: 1.68px;
   color: #000; }
+
+.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  color: #000; }
+
+.app header .content .content_body .details, .app main .price .price_planGroup .item .item_price, .app main .price .price_details, .app main .work .work_steps .step .step_body .detail {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  color: #000; }
+
+.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn {
+  min-height: 61px;
+  min-width: 183px;
+  border: 4px solid #ef8094;
+  border-radius: 300px;
+  background: #ef8094; }
 
 .app {
   width: 100%;
@@ -45,10 +84,195 @@
         .app header .navBar .navBar_group .item:last-child a {
           letter-spacing: 1.68px; }
       .app header .navBar .navBar_icon {
-        display: none; }
+        display: none;
+        margin-right: 16px; }
       .app header .navBar .navBar_close {
         display: none;
-        font-size: 30px; }
+        font-size: 30px;
+        margin-right: 16px; }
+    .app header .content {
+      position: relative;
+      height: 545px;
+      width: 100%;
+      background: #f5f8ff;
+      padding: 105px 0 122px 110px; }
+      .app header .content .content_body {
+        display: flex;
+        flex-direction: column;
+        width: 512px; }
+        .app header .content .content_body .details {
+          width: 474px;
+          margin-top: 20px; }
+        .app header .content .content_body .btn {
+          align-self: flex-start;
+          margin-top: 30px;
+          background: #fff; }
+      .app header .content .content_img {
+        position: absolute;
+        height: 630px;
+        right: 0px;
+        bottom: -144px; }
+  .app main .price {
+    width: 90%;
+    min-height: 554px;
+    margin: 70px auto 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .app main .price .price_title {
+      position: relative; }
+    .app main .price .price_title::before {
+      content: url("../images/main/underline.png");
+      max-height: 17px;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .app main .price .price_planGroup {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px; }
+      .app main .price .price_planGroup .item {
+        width: 45%;
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        border: 4px solid #c4c4c4; }
+        .app main .price .price_planGroup .item .item_price {
+          font-size: 4.4rem;
+          letter-spacing: 5.28px;
+          margin-top: 4px; }
+        .app main .price .price_planGroup .item .item_btn {
+          min-width: 200px;
+          color: #fff;
+          margin-top: 20px; }
+      .app main .price .price_planGroup .item1 {
+        background: url(../images/main/box1.png) center/cover no-repeat; }
+      .app main .price .price_planGroup .item2 {
+        background: url(../images/main/box2.png) center/cover no-repeat; }
+    .app main .price .price_details {
+      margin-top: 44px; }
+  .app main .work {
+    width: 100%;
+    margin: 52px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .app main .work .work_title {
+      position: relative; }
+    .app main .work .work_title::before {
+      content: url("../images/main/underline2.png");
+      max-height: 17px;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .app main .work .work_steps {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start; }
+      .app main .work .work_steps .step {
+        display: flex;
+        position: relative; }
+        .app main .work .work_steps .step .step_number {
+          font-family: "DM Serif Display", sans-serif;
+          color: #ef8094;
+          font-size: 22rem;
+          font-weight: 400;
+          line-height: 25.4%;
+          font-style: normal;
+          width: 97px;
+          height: 124px;
+          z-index: 10; }
+        .app main .work .work_steps .step .step_body {
+          display: flex;
+          flex-direction: column; }
+          .app main .work .work_steps .step .step_body .detail {
+            margin-top: 16px; }
+      .app main .work .work_steps .step1 {
+        width: 965px;
+        min-height: 405px;
+        margin-left: 207px; }
+        .app main .work .work_steps .step1 .step_number {
+          position: absolute;
+          left: 114px;
+          bottom: 180px; }
+        .app main .work .work_steps .step1 .step_body {
+          width: 392px;
+          margin: 65px auto auto 454px; }
+      .app main .work .work_steps .step1::before {
+        content: url(../images/main/art1.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      .app main .work .work_steps .step1::after {
+        content: url(../images/main/mask1.png);
+        position: absolute;
+        bottom: 0;
+        left: 87px;
+        z-index: 2; }
+      .app main .work .work_steps .step2 {
+        width: 556px;
+        margin: 334px auto 0 567px; }
+        .app main .work .work_steps .step2 .step_number {
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .app main .work .work_steps .step2 .step_number::before {
+          content: url(../images/main/Vector.png);
+          position: absolute;
+          top: -330px;
+          left: 266px;
+          z-index: -2; }
+        .app main .work .work_steps .step2 .step_number::after {
+          content: url(../images/main/box2-step2.png);
+          position: absolute;
+          top: -536px;
+          left: -361px;
+          z-index: -1; }
+        .app main .work .work_steps .step2 .step_body {
+          margin: 70px auto 0 146px; }
+          .app main .work .work_steps .step2 .step_body .title {
+            width: 250px; }
+      .app main .work .work_steps .step2::before {
+        content: url(../images/main/art2.png);
+        position: absolute;
+        top: -200px;
+        left: 0;
+        z-index: 1; }
+      .app main .work .work_steps .step3 {
+        width: 880px;
+        min-height: 415px;
+        margin: 70px 0 0 295px; }
+        .app main .work .work_steps .step3 .step_number {
+          position: absolute;
+          top: 94px;
+          left: 0px; }
+        .app main .work .work_steps .step3 .step_number::before {
+          content: url(../images/main/mask_step3.png);
+          position: absolute;
+          top: -94px;
+          left: 0px;
+          z-index: -1; }
+        .app main .work .work_steps .step3 .step_number::after {
+          content: url(../images/main/art3.png);
+          position: absolute;
+          bottom: -200px;
+          left: 208px;
+          z-index: -2; }
+        .app main .work .work_steps .step3 .step_body {
+          margin: 84px 0 0 370px;
+          width: 454px; }
+    .app main .work .work_btn {
+      background: #fff;
+      min-width: 284px;
+      margin-top: 152px; }
 
 @media screen and (max-width: 1200px) {
   .app header .navBar {
@@ -65,7 +289,118 @@
         letter-spacing: 1.6px;
         font-size: 1rem; }
       .app header .navBar .navBar_group .item:last-child a {
-        letter-spacing: 1.2px; } }
+        letter-spacing: 1.2px; }
+  .app header .content {
+    height: 474px;
+    padding: 18px 0 190px 40px; }
+    .app header .content .content_body {
+      display: flex;
+      flex-direction: column;
+      width: 492px; }
+      .app header .content .content_body .title {
+        font-size: 4.2rem;
+        line-height: 114%; }
+      .app header .content .content_body .details {
+        width: 362px;
+        font-size: 1.4rem;
+        letter-spacing: 0.14px; }
+      .app header .content .content_body .btn {
+        margin-top: 8px;
+        font-size: 1.4rem;
+        letter-spacing: 1.68px;
+        min-height: 48px; }
+    .app header .content .content_img {
+      height: 554px;
+      right: -54px;
+      bottom: -126px; }
+  .app main .price {
+    min-height: 325px;
+    margin: 28px auto 0px; }
+    .app main .price .price_title {
+      font-size: 4.2rem;
+      line-height: 114%; }
+    .app main .price .price_title::before {
+      max-height: 9px; }
+    .app main .price .price_planGroup {
+      margin-top: 30px; }
+      .app main .price .price_planGroup .item {
+        height: 155px; }
+        .app main .price .price_planGroup .item .item_time {
+          font-size: 2rem; }
+        .app main .price .price_planGroup .item .item_price {
+          font-size: 2.4rem;
+          letter-spacing: 2.88px;
+          margin-top: 2px; }
+        .app main .price .price_planGroup .item .item_btn {
+          min-width: 106px;
+          min-height: 32px;
+          font-size: 0.8rem;
+          letter-spacing: 0.96px;
+          margin-top: 6px; }
+    .app main .price .price_details {
+      margin-top: 22px;
+      font-size: 1.4rem;
+      letter-spacing: 0.14px; }
+  .app main .work {
+    margin: 88px auto 0; }
+    .app main .work .work_title {
+      font-size: 4.2rem;
+      line-height: 133%; }
+    .app main .work .work_title::before {
+      max-height: 14px; }
+    .app main .work .work_steps {
+      margin-top: 60px; }
+      .app main .work .work_steps .step .step_number {
+        width: 78px;
+        height: 98px; }
+      .app main .work .work_steps .step .step_body .title {
+        font-size: 3.2rem;
+        line-height: 112.5%; }
+      .app main .work .work_steps .step .step_body .detail {
+        font-size: 1.4rem;
+        letter-spacing: 0.14px; }
+      .app main .work .work_steps .step1 {
+        width: 730px;
+        min-height: 315px;
+        margin-left: 20px; }
+        .app main .work .work_steps .step1 .step_number {
+          left: 84px;
+          bottom: 128px; }
+        .app main .work .work_steps .step1 .step_body {
+          width: 312px;
+          margin: 65px auto auto 394px; }
+      .app main .work .work_steps .step1::before {
+        top: -6px;
+        left: -44px; }
+      .app main .work .work_steps .step1::after {
+        bottom: -66px;
+        left: 48px; }
+      .app main .work .work_steps .step2 {
+        width: 452px;
+        margin: 400px auto 0 272px; }
+        .app main .work .work_steps .step2 .step_body {
+          margin: 74px auto 0 148px; }
+          .app main .work .work_steps .step2 .step_body .title {
+            width: 250px; }
+      .app main .work .work_steps .step3 {
+        width: 700px;
+        min-height: 330px;
+        margin: 34px 0 0 54px; }
+        .app main .work .work_steps .step3 .step_number {
+          top: 74px; }
+        .app main .work .work_steps .step3 .step_number::before {
+          top: -74px; }
+        .app main .work .work_steps .step3 .step_number::after {
+          bottom: -240px; }
+        .app main .work .work_steps .step3 .step_body {
+          margin: 66px 0 0 352px;
+          width: 360px; }
+    .app main .work .work_btn {
+      min-width: 226px;
+      min-height: 48px;
+      margin-top: 126px;
+      font-size: 1.2rem;
+      letter-spacing: 1.44px; } }
 @media screen and (max-width: 768px) {
   .app header .navBar {
     position: relative;
@@ -81,7 +416,8 @@
       width: 100%;
       padding: 20px 0;
       background: #ef8094;
-      flex-direction: column; }
+      flex-direction: column;
+      z-index: 10; }
       .app header .navBar .navBar_group .item:last-child {
         padding: 10px 10px 6px 14px;
         border-color: #fff; }
@@ -92,6 +428,131 @@
       .app header .navBar .navBar_group .item:last-child a {
         letter-spacing: 1.68px; }
     .app header .navBar .navBar_icon {
-      display: inline-block; } }
+      display: inline-block; }
+  .app header .content {
+    height: 935px;
+    padding: 44px 0 400px 44px; }
+    .app header .content .content_body {
+      width: 302px; }
+      .app header .content .content_body .title {
+        font-size: 4.8rem;
+        line-height: 116%; }
+      .app header .content .content_body .details {
+        width: 294px;
+        margin-top: 28px;
+        font-size: 1.8rem;
+        letter-spacing: 0.18px; }
+      .app header .content .content_body .btn {
+        margin-top: 14px;
+        font-size: 1.6rem;
+        letter-spacing: 1.92px;
+        min-height: 60px; }
+    .app header .content .content_img {
+      height: 530px;
+      right: -62px;
+      bottom: -124px; }
+  .app main .price {
+    width: 92%;
+    min-height: 616px;
+    margin: 114px auto 0px; }
+    .app main .price .price_title {
+      font-size: 4.8rem;
+      line-height: 116%; }
+    .app main .price .price_title::before {
+      max-height: 16px; }
+    .app main .price .price_planGroup {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 18px;
+      margin-top: 48px; }
+      .app main .price .price_planGroup .item {
+        width: 100%;
+        height: 188px; }
+        .app main .price .price_planGroup .item .item_time {
+          font-size: 3rem; }
+        .app main .price .price_planGroup .item .item_price {
+          font-size: 3rem;
+          letter-spacing: 3.6px; }
+        .app main .price .price_planGroup .item .item_btn {
+          min-width: 180px;
+          min-height: 40px;
+          font-size: 1.4rem;
+          letter-spacing: 1.68px;
+          margin-top: 8px; }
+    .app main .price .price_details {
+      margin-top: 14px; }
+  .app main .work {
+    margin: 85px auto 0; }
+    .app main .work .work_title {
+      font-size: 4.8rem;
+      line-height: 116%; }
+    .app main .work .work_title::before {
+      max-height: 16px; }
+    .app main .work .work_steps {
+      margin-top: 68px; }
+      .app main .work .work_steps .step {
+        flex-direction: column; }
+        .app main .work .work_steps .step .step_number {
+          width: 97px;
+          height: 124px; }
+        .app main .work .work_steps .step .step_body .title {
+          font-size: 3.6rem;
+          line-height: 122.2%; }
+        .app main .work .work_steps .step .step_body .detail {
+          font-size: 1.8rem;
+          letter-spacing: 0.18px; }
+      .app main .work .work_steps .step1 {
+        width: 278px;
+        min-height: 630px;
+        margin-left: 50px; }
+        .app main .work .work_steps .step1 .step_number {
+          left: 20px;
+          bottom: 414px; }
+        .app main .work .work_steps .step1 .step_body {
+          width: 306px;
+          margin: 432px auto auto 50px; }
+          .app main .work .work_steps .step1 .step_body .detail {
+            width: 278px; }
+      .app main .work .work_steps .step1::before {
+        top: 10px;
+        left: -120px; }
+      .app main .work .work_steps .step1::after {
+        bottom: 236px;
+        left: 0px; }
+      .app main .work .work_steps .step2 {
+        width: 294px;
+        margin: 148px auto 0 38px; }
+        .app main .work .work_steps .step2 .step_number::before {
+          display: none; }
+        .app main .work .work_steps .step2 .step_number::after {
+          top: -154px;
+          left: -442px; }
+        .app main .work .work_steps .step2 .step_body {
+          margin: 438px auto 0 14px; }
+      .app main .work .work_steps .step2::before {
+        top: 242px;
+        left: -38px; }
+      .app main .work .work_steps .step3 {
+        width: 282px;
+        min-height: 714px;
+        margin: 114px 0 0 18px; }
+        .app main .work .work_steps .step3 .step_number {
+          top: 94px; }
+        .app main .work .work_steps .step3 .step_number::before {
+          top: -94px; }
+        .app main .work .work_steps .step3 .step_number::after {
+          bottom: -194px;
+          left: 208px; }
+        .app main .work .work_steps .step3 .step_body {
+          margin: 428px 0 0 34px;
+          width: 282px; }
+          .app main .work .work_steps .step3 .step_body .title {
+            width: 174px; }
+    .app main .work .work_btn {
+      min-width: 284px;
+      min-height: 61px;
+      margin-top: 60px;
+      font-size: 1.6rem;
+      letter-spacing: 1.92px; } }
 
 /*# sourceMappingURL=home.css.map */
