@@ -21,7 +21,7 @@
   line-height: 122.2%;
   color: #000; }
 
-.app header .navBar .navBar_group .item a {
+.app header .navBar .navBar_group .item a, .app footer .contact .contact-normal .item a, .app footer .content {
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
@@ -54,7 +54,8 @@
 
 .app {
   width: 100%;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden; }
   .app header {
     width: 100%; }
     .app header .topBar {
@@ -313,6 +314,43 @@
     top: 664px;
     left: 62.5%;
     z-index: 3; }
+  .app footer {
+    width: 95%;
+    margin: 30px auto 32px;
+    background: rgba(238, 238, 238, 0.3);
+    border: 2px solid rgba(196, 196, 196, 0.3);
+    border-radius: 10px; }
+    .app footer .contact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 198px;
+      row-gap: 62px;
+      column-gap: 183px;
+      width: 100%;
+      padding: 44px 85px 48px 80px;
+      border-bottom: 2px solid rgba(196, 196, 196, 0.3); }
+      .app footer .contact .contact_logo {
+        height: 38px;
+        grid-column: 1 / span 3; }
+        .app footer .contact .contact_logo img {
+          height: 38px; }
+      .app footer .contact .contact_social {
+        display: flex;
+        align-items: center;
+        gap: 32px; }
+      .app footer .contact .contact-normal {
+        display: flex;
+        flex-direction: column;
+        gap: 14px; }
+        .app footer .contact .contact-normal .item a {
+          text-decoration: none; }
+        .app footer .contact .contact-normal .item-title a {
+          font-size: 2rem;
+          font-weight: 700;
+          letter-spacing: 2.4px; }
+    .app footer .content {
+      padding: 24px 72px 18px 78px;
+      display: flex;
+      justify-content: space-between; }
 
 @media screen and (max-width: 1200px) {
   .app header .navBar {
@@ -456,7 +494,29 @@
   .app main .post:before {
     display: none; }
   .app main .post:after {
-    display: none; } }
+    display: none; }
+  .app footer {
+    width: 90%;
+    margin: 42px auto 32px; }
+    .app footer .contact {
+      grid-template-columns: 1fr 198px;
+      row-gap: 50px;
+      column-gap: 0;
+      padding: 54px 90px 26px 62px; }
+      .app footer .contact .contact_logo {
+        grid-column: 1; }
+    .app footer .content {
+      padding: 30px 78px 22px 62px;
+      display: grid;
+      grid-template-columns: 60px auto;
+      column-gap: 36px;
+      row-gap: 10px; }
+      .app footer .content .content_desc {
+        grid-area: 2 / 1 / span 1 / span 2; }
+      .app footer .content .content_term {
+        grid-column: 1 / span 1; }
+      .app footer .content .content_privacy {
+        grid-column: 2 / span 1; } }
 @media screen and (max-width: 768px) {
   .app header .navBar {
     position: relative;
@@ -624,6 +684,39 @@
         letter-spacing: 0.22px; }
     .app main .post .post_btn {
       min-width: 312px;
-      margin-top: 104px; } }
+      margin-top: 104px; }
+  .app footer {
+    width: 92%;
+    margin: 18px auto 20px; }
+    .app footer .contact {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+      padding: 40px 8px 40px 34px; }
+      .app footer .contact .contact_logo {
+        grid-column: 1 / span 2; }
+      .app footer .contact .contact-normal {
+        gap: 8px; }
+        .app footer .contact .contact-normal .item a {
+          font-size: 1.2rem;
+          letter-spacing: 1.44px; }
+        .app footer .contact .contact-normal .item-title a {
+          font-size: 1.6rem;
+          letter-spacing: 1.6px; }
+      .app footer .contact .contact_social {
+        display: none; }
+      .app footer .contact .contact_upBox {
+        grid-area: 2 / 1 / span 1 / span 1; }
+      .app footer .contact .contact_product {
+        grid-area: 2 / 2 / span 1 / span 1; }
+    .app footer .content {
+      padding: 22px 40px 36px 34px;
+      grid-template-columns: auto;
+      column-gap: 0px; }
+      .app footer .content .content_desc {
+        grid-area: 3 / 1 / span 1 / span 1; }
+      .app footer .content .content_term {
+        grid-area: 1 / 1 / span 1 / span 1; }
+      .app footer .content .content_privacy {
+        grid-area: 2 / 1 / span 1 / span 1; } }
 
 /*# sourceMappingURL=home.css.map */
