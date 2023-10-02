@@ -26,3 +26,19 @@ window.addEventListener("resize", () => {
         navBarClose.style.display = "none";
     }
 });
+
+const headerBar = document.querySelector("#headerBar");
+var oldScrollTop = document.documentElement.scrollTop;
+window.addEventListener("scroll", function (e) {
+    var currentScrollTop = document.documentElement.scrollTop;
+    if (currentScrollTop > headerBar.offsetHeight) {
+        if (currentScrollTop > oldScrollTop) {
+            headerBar.classList.remove("headerBar");
+        } else {
+            headerBar.classList.add("headerBar");
+        }
+        oldScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    } else {
+        headerBar.classList.remove("headerBar");
+    }
+});
