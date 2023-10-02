@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="./assets/images/Logo.png" />
         <link rel="stylesheet" href="./assets/styles/reset.css" />
-        <link rel="stylesheet" href="./assets/styles/home.css" />
+        <link rel="stylesheet" href="./assets/styles/contact.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Up Box</title>
     </head>
@@ -44,100 +44,32 @@
                     <img src="./assets/images/header/Hamburger.png" alt="Icon" class="navBar_icon">
                     <i class="fa-solid fa-xmark navBar_close"></i>
                 </nav>
-
-                <!-- Content -->
-                <div class="content">
-                    <div class="content_body">
-                        <h2 class="title">Look good without 
-                            leaving your house.</h2>
-                        <p class="details">Upbox is the easiest way to look your best without having to hunt for the perfect makeup combination. Our stylists curate the latest trends and send them directly to your door every month.</p>
-                        <button class="btn">SIGN UP ></button>
-                    </div>
-                    <img src="./assets/images/header/BOX.png" alt="Box" class="content_img">
-                </div>
             </header>
 
             <!-- Main -->
             <main>
-
-                <!-- Section price -->
-                <section class="price">
-                    <h2 class="price_title">Pick your plan</h2>
-                    <ul class="price_planGroup">
-                        <li class="item item1">
-                            <span class="item_time">Monthly</span>
-                            <span class="item_price">$18/mo</span>
-                            <button class="item_btn">FIND YOUR BOX</button>
-                        </li>
-                        <li class="item item2">
-                            <span class="item_time">Yearly</span>
-                            <span class="item_price">$15/mo</span>
-                            <button class="item_btn">FIND YOUR BOX</button>
-                        </li>
-                    </ul>
-                    <p class="price_details">Your plan auto-renews at the end of 30 days from the 1st day you signed-up.</p>
-                </section>
-
-                <!-- Section work -->
-                <section class="work">
-                    <h2 class="work_title">How it works?</h2>
-                    <ul class="work_steps">
-                        <li class="step step1">
-                            <div class="step_number">1</div>
-                            <div class="step_body">
-                                <h3 class="title">Setup your profile & preferences</h3>
-                                <p class="detail">Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
-                            </div>
-                        </li>
-                        <li class="step step2">
-                            <div class="step_number">2</div>
-                            <div class="step_body">
-                                <h3 class="title">Review your 
-                                    custom box</h3>
-                                <p class="detail">Once we get to know you, we will show you the box we’ve crafted. This is your chance to approve it before we ship it to your house.</p>
-                            </div>
-                        </li>
-                        <li class="step step3">
-                            <div class="step_number">3</div>
-                            <div class="step_body">
-                                <h3 class="title">Try it on at home</h3>
-                                <p class="detail">Your box will arrive within 3-5 days (usually sooner) and you get the joy to unbox your Upbox. Try it all on and send back whatever you're not in love with.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="work_btn">TRY IT FOR YOURSELF ></button>
-                </section>
-
-                <!-- Section post -->
-                <section class="post">
-                    <h2 class="post_title">Social Posts</h2>
-                    <ul class="post_group">
-                        <li class="item">
-                            <img src="./assets/images/main/img1.png" alt="Image 1" class="item_img">
-                            <p class="item_content">
-                                How to rock the lip look that turns heads
-                            </p>
-                        </li>
-                    <li class="item">
-                        <img src="./assets/images/main/img2.png" alt="Image 2" class="item_img">
-                        <p class="item_content">
-                            Find the perfect shade for the season
-                        </p>
-                    </li>
-                    <li class="item">
-                        <img src="./assets/images/main/img3.png" alt="Image 3" class="item_img">
-                        <p class="item_content">
-                            The 5 eye shadow secrets you never knew
-                        </p>
-                    </li>
-                    <li class="item">
-                        <img src="./assets/images/main/img4.png" alt="Image 4" class="item_img">
-                        <p class="item_content">
-                            The pro-tips for at home hair dying
-                        </p>
-                    </li></ul>
-                    <button class="post_btn">FOLLOW US ON INSTAGRAM</button>
-                </section>
+                <!-- Contact -->
+                <div class="contact">
+                    <div class="contact_img"></div>
+                    <form action="#" class="contact_form">
+                        <h2 class="title">Let’s Chat!</h2>
+                        <div class="email group">
+                            <label for="email_content">Email</label>
+                            <input type="email" name="email" class="email_content" id="email_content" placeholder = "Enter your message here" />
+                        </div>
+                        <div class="message group">
+                            <label for="message_content">Message</label>
+                            <textarea  type="text" name="message" class="message_content" id="message_content"  placeholder = "Enter your message here"></textarea>
+                        </div>
+                        <div class="checkBox group">
+                            <label for="newsletter_op">
+                                Opt-in to newsletter
+                            </label>
+                            <input type="checkbox" id="newsletter_op" class="newsletter_op" />
+                        </div>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </div>
             </main>
 
             <!-- Footer -->
@@ -232,7 +164,7 @@
                             <a href="#">FAQ</a>
                         </li>
                         <li class="item">
-                            <a href="/contact.html">Contact</a>
+                            <a href="#">Contact</a>
                         </li>
                         <li class="item">
                             <a href="#">Community</a>
