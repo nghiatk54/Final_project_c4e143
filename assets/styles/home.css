@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box; }
 
-.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title, .app main .post .post_title {
+.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title, .app main .post .post_title, .app .signUp .signUp_form .title {
   font-family: "DM Serif Display", sans-serif;
   font-size: 4.8rem;
   font-weight: 400;
@@ -21,7 +21,7 @@
   line-height: 122.2%;
   color: #000; }
 
-.app header .navBar .navBar_group .item a, .app footer .contact .contact-normal .item a, .app footer .content {
+.app header .navBar .navBar_group .item a, .app footer .contact .contact-normal .item a, .app footer .content, .app .signUp .signUp_form .submit {
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
@@ -37,7 +37,8 @@
   letter-spacing: 1.92px;
   color: #000; }
 
-.app header .content .content_body .details, .app main .price .price_planGroup .item .item_price, .app main .price .price_details, .app main .work .work_steps .step .step_body .detail, .app main .post .post_group .item .item_content {
+.app header .content .content_body .details, .app main .price .price_planGroup .item .item_price, .app main .price .price_details, .app main .work .work_steps .step .step_body .detail, .app main .post .post_group .item .item_content, .app .signUp .signUp_form .group label, .app .signUp .signUp_form .group input::placeholder,
+.app .signUp .signUp_form .group input {
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -45,7 +46,7 @@
   letter-spacing: 0.18px;
   color: #000; }
 
-.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn, .app main .post .post_btn {
+.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn, .app main .post .post_btn, .app .signUp .signUp_form .submit {
   min-height: 61px;
   min-width: 183px;
   border: 4px solid #ef8094;
@@ -359,6 +360,76 @@
       padding: 24px 72px 18px 78px;
       display: flex;
       justify-content: space-between; }
+  .app .signUp {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center; }
+    .app .signUp .signUp_form {
+      position: relative;
+      background: #fff;
+      width: 30%;
+      border-radius: 8px;
+      padding: 36px 28px 42px 38px;
+      display: flex;
+      flex-direction: column; }
+      .app .signUp .signUp_form .iconClose {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background: #000;
+        position: absolute;
+        right: -14px;
+        top: -16px;
+        font-size: 3.6rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+      .app .signUp .signUp_form .title {
+        font-size: 4.2rem; }
+      .app .signUp .signUp_form .group {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 16px; }
+        .app .signUp .signUp_form .group label {
+          font-size: 1.6rem;
+          letter-spacing: normal; }
+        .app .signUp .signUp_form .group input {
+          border: 1px solid #8d8d8d;
+          border-radius: 4px;
+          background: #f3f3f3;
+          padding: 10px 6px;
+          min-height: 30px; }
+        .app .signUp .signUp_form .group input::placeholder,
+        .app .signUp .signUp_form .group input {
+          font-size: 1.4rem;
+          letter-spacing: normal; }
+        .app .signUp .signUp_form .group input:focus,
+        .app .signUp .signUp_form .group textarea:focus {
+          outline: none; }
+      .app .signUp .signUp_form .submit {
+        font-size: 1.2rem;
+        color: #fff;
+        letter-spacing: normal;
+        border: none;
+        border-radius: 4px;
+        min-width: 120px;
+        min-height: 42px;
+        margin-top: 16px;
+        cursor: pointer;
+        align-self: flex-start;
+        width: 95%; }
 
 @media screen and (max-width: 1200px) {
   .app header .navBar {
@@ -524,7 +595,24 @@
       .app footer .content .content_term {
         grid-column: 1 / span 1; }
       .app footer .content .content_privacy {
-        grid-column: 2 / span 1; } }
+        grid-column: 2 / span 1; }
+  .app .signUp .signUp_form {
+    width: 60%; }
+    .app .signUp .signUp_form .iconClose {
+      width: 42px;
+      height: 42px;
+      font-size: 3rem; }
+    .app .signUp .signUp_form .title {
+      font-size: 4rem; }
+    .app .signUp .signUp_form .group label {
+      font-size: 1.4rem; }
+    .app .signUp .signUp_form .group input {
+      min-height: 26px; }
+    .app .signUp .signUp_form .group input::placeholder,
+    .app .signUp .signUp_form .group input {
+      font-size: 1.2rem; }
+    .app .signUp .signUp_form .submit {
+      min-height: 36px; } }
 @media screen and (max-width: 768px) {
   .app header .navBar {
     position: relative;
@@ -725,6 +813,29 @@
       .app footer .content .content_term {
         grid-area: 1 / 1 / span 1 / span 1; }
       .app footer .content .content_privacy {
-        grid-area: 2 / 1 / span 1 / span 1; } }
+        grid-area: 2 / 1 / span 1 / span 1; }
+  .app .signUp .signUp_form {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 80px; }
+    .app .signUp .signUp_form .iconClose {
+      width: 50px;
+      height: 50px;
+      font-size: 3.6rem;
+      top: 0;
+      right: 0; }
+    .app .signUp .signUp_form .title {
+      font-size: 4.6rem; }
+    .app .signUp .signUp_form .group label {
+      font-size: 1.8rem; }
+    .app .signUp .signUp_form .group input {
+      min-height: 36px; }
+    .app .signUp .signUp_form .group input::placeholder,
+    .app .signUp .signUp_form .group input {
+      font-size: 1.6rem; }
+    .app .signUp .signUp_form .submit {
+      min-height: 42px;
+      margin-top: 42px; } }
 
 /*# sourceMappingURL=home.css.map */

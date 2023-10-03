@@ -21,7 +21,7 @@
 
                     <!-- Nav bar -->
                     <nav class="navBar">
-                        <a href="#"><img src="./assets/images/header/Logo.png" alt="Logo" class="navBar_logo" /></a>
+                        <a href="/index.html"><img src="./assets/images/header/Logo.png" alt="Logo" class="navBar_logo" /></a>
                         <ul class="navBar_group">
                             <li class="item">
                                 <a href="#">THIS MONTH</a>
@@ -255,6 +255,37 @@
                     <span class="content_privacy">Privacy Policy</span>
                 </div>
             </footer>
+
+            <!-- Sign up form -->
+            <div class="signUp">
+                <form class="signUp_form">
+                    <div class="iconClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <h2 class="title">Create account</h2>
+                    <div class="name group">
+                        <label for="name_content">Your name</label>
+                        <input type="text" name="name" class="name_content" id="name_content" placeholder = "First and last name" />
+                    </div>
+                    <div class="email group">
+                        <label for="email_content">Email</label>
+                        <input  type="text" name="email" class="email_content" id="Email_content"  placeholder = "Enter your Email"></input>
+                    </div>
+                    <div class="password group">
+                        <label for="password_content">
+                            Password
+                        </label>
+                        <input type="password" id="password_content" class="password_content" placeholder="At least 6 characters" />
+                    </div>
+                    <div class="password group">
+                        <label for="password_content">
+                            Re-enter password
+                        </label>
+                        <input type="password" id="password_content" class="password_content"/>
+                    </div>
+                    <button type="submit" class="submit">Sign up</button>
+                </form>
+            </div>
         </div>
         <script src="./assets/js/home.js"></script>
     </body>
