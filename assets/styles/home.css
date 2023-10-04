@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box; }
 
-.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title, .app main .post .post_title, .app .signUp .signUp_form .title {
+.app header .content .content_body .title, .app main .price .price_title, .app main .work .work_title, .app main .post .post_title, .app .signUp .signUp_form .title, .app .login .login_form .title {
   font-family: "DM Serif Display", sans-serif;
   font-size: 4.8rem;
   font-weight: 400;
@@ -21,7 +21,7 @@
   line-height: 122.2%;
   color: #000; }
 
-.app header .navBar .navBar_group .item a, .app footer .contact .contact-normal .item a, .app footer .content, .app .signUp .signUp_form .submit {
+.app header .navBar .navBar_group .item a, .app footer .contact .contact-normal .item a, .app footer .content, .app .signUp .signUp_form .submit, .app .login .login_form .submit {
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
@@ -38,7 +38,8 @@
   color: #000; }
 
 .app header .content .content_body .details, .app main .price .price_planGroup .item .item_price, .app main .price .price_details, .app main .work .work_steps .step .step_body .detail, .app main .post .post_group .item .item_content, .app .signUp .signUp_form .group label, .app .signUp .signUp_form .group input::placeholder,
-.app .signUp .signUp_form .group input {
+.app .signUp .signUp_form .group input, .app .login .login_form .group label, .app .login .login_form .group input::placeholder,
+.app .login .login_form .group input {
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -46,7 +47,7 @@
   letter-spacing: 0.18px;
   color: #000; }
 
-.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn, .app main .post .post_btn, .app .signUp .signUp_form .submit {
+.app header .content .content_body .btn, .app main .price .price_planGroup .item .item_btn, .app main .work .work_btn, .app main .post .post_btn, .app .signUp .signUp_form .submit, .app .login .login_form .submit {
   min-height: 61px;
   min-width: 183px;
   border: 4px solid #ef8094;
@@ -116,7 +117,8 @@
         .app header .content .content_body .btn {
           align-self: flex-start;
           margin-top: 30px;
-          background: #fff; }
+          background: #fff;
+          cursor: pointer; }
       .app header .content .content_img {
         position: absolute;
         height: 630px;
@@ -361,7 +363,7 @@
       display: flex;
       justify-content: space-between; }
   .app .signUp {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -419,7 +421,77 @@
         .app .signUp .signUp_form .group textarea:focus {
           outline: none; }
       .app .signUp .signUp_form .submit {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        color: #fff;
+        letter-spacing: normal;
+        border: none;
+        border-radius: 4px;
+        min-width: 120px;
+        min-height: 42px;
+        margin-top: 16px;
+        cursor: pointer;
+        align-self: flex-start;
+        width: 95%; }
+  .app .login {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center; }
+    .app .login .login_form {
+      position: relative;
+      background: #fff;
+      width: 30%;
+      border-radius: 8px;
+      padding: 36px 28px 42px 38px;
+      display: flex;
+      flex-direction: column; }
+      .app .login .login_form .iconClose {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background: #000;
+        position: absolute;
+        right: -14px;
+        top: -16px;
+        font-size: 3.6rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+      .app .login .login_form .title {
+        font-size: 4.2rem; }
+      .app .login .login_form .group {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 16px; }
+        .app .login .login_form .group label {
+          font-size: 1.6rem;
+          letter-spacing: normal; }
+        .app .login .login_form .group input {
+          border: 1px solid #8d8d8d;
+          border-radius: 4px;
+          background: #f3f3f3;
+          padding: 10px 6px;
+          min-height: 30px; }
+        .app .login .login_form .group input::placeholder,
+        .app .login .login_form .group input {
+          font-size: 1.4rem;
+          letter-spacing: normal; }
+        .app .login .login_form .group input:focus,
+        .app .login .login_form .group textarea:focus {
+          outline: none; }
+      .app .login .login_form .submit {
+        font-size: 1.8rem;
         color: #fff;
         letter-spacing: normal;
         border: none;
@@ -612,6 +684,23 @@
     .app .signUp .signUp_form .group input {
       font-size: 1.2rem; }
     .app .signUp .signUp_form .submit {
+      min-height: 36px; }
+  .app .login .login_form {
+    width: 60%; }
+    .app .login .login_form .iconClose {
+      width: 42px;
+      height: 42px;
+      font-size: 3rem; }
+    .app .login .login_form .title {
+      font-size: 4rem; }
+    .app .login .login_form .group label {
+      font-size: 1.4rem; }
+    .app .login .login_form .group input {
+      min-height: 26px; }
+    .app .login .login_form .group input::placeholder,
+    .app .login .login_form .group input {
+      font-size: 1.2rem; }
+    .app .login .login_form .submit {
       min-height: 36px; } }
 @media screen and (max-width: 768px) {
   .app header .navBar {
@@ -823,8 +912,8 @@
       width: 50px;
       height: 50px;
       font-size: 3.6rem;
-      top: 0;
-      right: 0; }
+      top: 6px;
+      right: 18px; }
     .app .signUp .signUp_form .title {
       font-size: 4.6rem; }
     .app .signUp .signUp_form .group label {
@@ -835,6 +924,29 @@
     .app .signUp .signUp_form .group input {
       font-size: 1.6rem; }
     .app .signUp .signUp_form .submit {
+      min-height: 42px;
+      margin-top: 42px; }
+  .app .login .login_form {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 80px; }
+    .app .login .login_form .iconClose {
+      width: 50px;
+      height: 50px;
+      font-size: 3.6rem;
+      top: 6px;
+      right: 18px; }
+    .app .login .login_form .title {
+      font-size: 4.6rem; }
+    .app .login .login_form .group label {
+      font-size: 1.8rem; }
+    .app .login .login_form .group input {
+      min-height: 36px; }
+    .app .login .login_form .group input::placeholder,
+    .app .login .login_form .group input {
+      font-size: 1.6rem; }
+    .app .login .login_form .submit {
       min-height: 42px;
       margin-top: 42px; } }
 

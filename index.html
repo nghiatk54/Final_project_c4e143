@@ -38,7 +38,7 @@
                             <li class="item">
                                 <a href="#">SALE</a>
                             </li>
-                            <li class="item">
+                            <li class="item login-btn">
                                 <a href="#">LOG IN ></a>
                             </li>
                         </ul>
@@ -264,26 +264,48 @@
                     </div>
                     <h2 class="title">Create account</h2>
                     <div class="name group">
-                        <label for="name_content">Your name</label>
-                        <input type="text" name="name" class="name_content" id="name_content" placeholder = "First and last name" />
+                        <label for="name_content">Username</label>
+                        <input required type="text" name="name" class="name_content" id="name_content" placeholder = "Enter your username" />
                     </div>
                     <div class="email group">
                         <label for="email_content">Email</label>
-                        <input  type="text" name="email" class="email_content" id="Email_content"  placeholder = "Enter your Email"></input>
+                        <input required  type="email" name="email" class="email_content" id="Email_content"  placeholder = "Enter your Email"></input>
                     </div>
                     <div class="password group">
                         <label for="password_content">
                             Password
                         </label>
-                        <input type="password" id="password_content" class="password_content" placeholder="At least 6 characters" />
+                        <input required type="password" id="password_content" class="password_content" placeholder="At least 6 characters" />
                     </div>
                     <div class="password group">
-                        <label for="password_content">
+                        <label for="password_content-re">
                             Re-enter password
                         </label>
-                        <input type="password" id="password_content" class="password_content"/>
+                        <input required type="password" id="password_content-confirm" class="password_content-confirm"/>
                     </div>
                     <button type="submit" class="submit">Sign up</button>
+                </form>
+            </div>
+
+            <!-- Login form -->
+            <div class="login">
+                <form class="login_form">
+                    <div class="iconClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <h2 class="title">Login account</h2>
+                    <div class="name group">
+                        <label for="name_content">Username</label>
+                        <input required type="text" name="name" class="name_content" id="name_content" placeholder = "Enter your username" />
+                    </div>
+                    
+                    <div class="password group">
+                        <label for="password_content">
+                            Password
+                        </label>
+                        <input required type="password" id="password_content" class="password_content" placeholder="At least 6 characters" />
+                    </div>
+                    <button type="submit" class="submit">Login</button>
                 </form>
             </div>
         </div>
