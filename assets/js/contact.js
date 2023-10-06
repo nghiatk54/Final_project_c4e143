@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ];
             localStorage.setItem("contact", JSON.stringify(contact_new));
         }
+        alert("Message sent successfully!");
         emailEl.value = "";
         message.value = "";
     });

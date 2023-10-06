@@ -85,6 +85,11 @@
         align-items: center;
         gap: 40.5px;
         transition: all 1s ease-in-out; }
+        .app header .navBar .navBar_group .item {
+          padding: 12px 0px;
+          cursor: pointer; }
+        .app header .navBar .navBar_group .item:hover {
+          opacity: 0.7; }
         .app header .navBar .navBar_group .item:last-child {
           padding: 10px 20px 10px 28px;
           border-radius: 300px;
@@ -119,6 +124,9 @@
           margin-top: 30px;
           background: #fff;
           cursor: pointer; }
+        .app header .content .content_body .btn:hover {
+          opacity: 0.8;
+          background: #f5eaea; }
       .app header .content .content_img {
         position: absolute;
         height: 630px;
@@ -161,7 +169,10 @@
         .app main .price .price_planGroup .item .item_btn {
           min-width: 200px;
           color: #fff;
-          margin-top: 20px; }
+          margin-top: 20px;
+          cursor: pointer; }
+        .app main .price .price_planGroup .item .item_btn:hover {
+          opacity: 0.8; }
       .app main .price .price_planGroup .item1 {
         background: url(../images/main/box1.png) center/cover no-repeat; }
       .app main .price .price_planGroup .item2 {
@@ -284,7 +295,11 @@
     .app main .work .work_btn {
       background: #fff;
       min-width: 284px;
-      margin-top: 152px; }
+      margin-top: 152px;
+      cursor: pointer; }
+    .app main .work .work_btn:hover {
+      opacity: 0.8;
+      background: #f5eaea; }
   .app main .post {
     position: relative;
     width: 100%;
@@ -312,7 +327,10 @@
     .app main .post .post_btn {
       min-width: 320px;
       color: #fff;
-      margin-top: 108px; }
+      margin-top: 108px;
+      cursor: pointer; }
+    .app main .post .post_btn:hover {
+      opacity: 0.8; }
   .app main .post:before {
     content: url(../images/main/bg-post-1.png);
     position: absolute;
@@ -348,6 +366,9 @@
         display: flex;
         align-items: center;
         gap: 32px; }
+      .app footer .contact .contact_logo:hover,
+      .app footer .contact .contact_social a:hover {
+        opacity: 0.8; }
       .app footer .contact .contact-normal {
         display: flex;
         flex-direction: column;
@@ -358,6 +379,8 @@
           font-size: 2rem;
           font-weight: 700;
           letter-spacing: 2.4px; }
+        .app footer .contact .contact-normal .item:hover {
+          opacity: 0.8; }
     .app footer .content {
       padding: 24px 72px 18px 78px;
       display: flex;
@@ -636,7 +659,8 @@
     .app main .post .post_group {
       width: 658px;
       grid-template-columns: repeat(2, 1fr);
-      margin-top: 48px; }
+      margin-top: 48px;
+      row-gap: 48px; }
       .app main .post .post_group .item .item_content {
         font-size: 2rem;
         letter-spacing: 0.2px; }
