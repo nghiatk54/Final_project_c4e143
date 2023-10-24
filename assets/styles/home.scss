@@ -1143,6 +1143,12 @@
 
                 .navBar_icon {
                     display: inline-block;
+                    font-size: 42px;
+                    cursor: pointer;
+                }
+
+                .navBar_close {
+                    cursor: pointer;
                 }
             }
 
@@ -1248,6 +1254,7 @@
 
                 .work_steps {
                     margin-top: 68px;
+                    align-self: center;
 
                     .step {
                         flex-direction: column;
@@ -1395,13 +1402,12 @@
 
             // Contact
             .contact {
-                grid-template-columns: repeat(2, 1fr);
-                row-gap: 40px;
+                // grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
                 padding: 40px 8px 40px 34px;
-
-                .contact_logo {
-                    grid-column: 1 / span 2;
-                }
+                text-align: center;
 
                 .contact-normal {
                     gap: 8px;
@@ -1420,14 +1426,6 @@
                 .contact_social {
                     display: none;
                 }
-
-                .contact_upBox {
-                    grid-area: 2 / 1 / span 1 / span 1;
-                }
-
-                .contact_product {
-                    grid-area: 2 / 2 / span 1 / span 1;
-                }
             }
 
             // Content
@@ -1438,14 +1436,17 @@
 
                 .content_desc {
                     grid-area: 3 / 1 / span 1 / span 1;
+                    text-align: center;
                 }
 
                 .content_term {
                     grid-area: 1 / 1 / span 1 / span 1;
+                    text-align: center;
                 }
 
                 .content_privacy {
                     grid-area: 2 / 1 / span 1 / span 1;
+                    text-align: center;
                 }
             }
         }
